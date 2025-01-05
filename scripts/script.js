@@ -49,7 +49,6 @@ function playRound(humanChoice, computerChoice) {
     score.appendChild(para);
     if (humanChoice === computerChoice) {
         para.textContent = "It's a tie!";
-        console.log("tie", humanChoice, computerChoice);
     } else if (
         (humanChoice === "rock" && computerChoice === "scissors") ||
         (humanChoice === "paper" && computerChoice === "rock") ||
@@ -60,14 +59,12 @@ function playRound(humanChoice, computerChoice) {
         } beats ${computerChoice}`;
         humanScore++;
         humanScoreText.textContent = humanScore;
-        console.log("win", humanChoice, computerChoice);
     } else {
         para.textContent = `You Lose! ${
             computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)
         } beats ${humanChoice}`;
         computerScore++;
         computerScoreText.textContent = computerScore;
-        console.log("lose", humanChoice, computerChoice);
     }
 }
 
