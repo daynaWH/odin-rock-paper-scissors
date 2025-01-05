@@ -1,0 +1,112 @@
+/* ------------ BASE ------------ */
+
+body,
+button {
+    font-family: "Capriola", serif;
+}
+
+.body-wrapper {
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    margin: 4rem auto;
+    background-color: rgb(181, 213, 245, 0.5);
+    border: solid;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(65, 65, 65);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 116, 148);
+    border-radius: 1rem 1rem 0 0;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ------------ Gameboard ------------ */
+
+.gameboard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.player-selection {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-selection button {
+    background-color: transparent;
+    border: none;
+}
+
+.player-selection img {
+    width: 6rem;
+    max-height: 7rem;
+}
+
+.player-selection img:hover {
+    width: 6.5rem;
+    max-height: 7.5rem;
+}
+
+.comp-selection img {
+    width: 8rem;
+}
+
+/* ------------ Results ------------ */
+
+.results {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 15rem;
+    padding: 1rem;
+    background-color: rgb(57, 122, 152);
+    color: white;
+    border: double 3px black;
+    animation: 0.6s infinite alternate pop;
+}
+
+.btn-restart {
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 8rem;
+}
+
+.btn-restart:hover {
+    background-color: black;
+    color: white;
+}
+
+@keyframes pop {
+    from {
+        width: 15rem;
+        padding: 1rem;
+    }
+    to {
+        width: 15.3rem;
+        padding: 1.1rem;
+    }
+}
