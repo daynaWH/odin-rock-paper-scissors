@@ -17,13 +17,16 @@ button {
     text-align: center;
 }
 
-h1 {
-    text-align: center;
-    margin: 0;
-    padding: 2rem;
+header {
     color: rgb(255, 255, 255);
     background-color: rgb(47, 116, 148);
     border-radius: 1rem 1rem 0 0;
+    padding: 2rem 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
 }
 
 h2 {
@@ -54,7 +57,7 @@ button {
     border: none;
 }
 
-.player-selection img {
+img {
     width: 6rem;
     max-height: 7rem;
 }
@@ -64,8 +67,8 @@ button {
     max-height: 7.5rem;
 }
 
-.comp-selection img {
-    width: 8rem;
+.player-selection button.unselected {
+    opacity: 0.5;
 }
 
 /* ------------ Results ------------ */
@@ -80,8 +83,6 @@ button {
     /* display: flex; */
     flex-wrap: wrap;
     justify-content: center;
-    width: 15rem;
-    padding: 1rem;
     background-color: rgb(57, 122, 152);
     color: white;
     border: double 3px black;
@@ -102,11 +103,11 @@ button {
 
 @keyframes pop {
     from {
-        width: 15rem;
-        padding: 1rem;
+        width: 18rem;
+        padding: 2rem;
     }
     to {
-        width: 15.3rem;
-        padding: 1.1rem;
+        width: 18.3rem;
+        padding: 2.1rem;
     }
 }

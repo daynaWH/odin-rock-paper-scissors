@@ -23,28 +23,35 @@
         <div class="body-wrapper">
             <header>
                 <h1>Rock Paper Scissors</h1>
+                <p>Win 5 Rounds to Defeat your Opponent!</p>
             </header>
             <main>
                 <div class="gameboard">
                     <div class="player-selection">
-                        <p>Choose your option!</p>
+                        <p>Choose your option</p>
                         <button id="btn-rock">
-                            <img src="images/Rock.png" alt="rock" />
+                            <!-- Images from https://creazilla.com/media/clipart/36999/hands-are-showing-rock-paper-scissors-icons -->
+                            <img src="images/rock.png" alt="rock" />
                         </button>
                         <button id="btn-paper">
-                            <img src="images/Paper.png" alt="paper" />
+                            <img src="images/paper.png" alt="paper" />
                         </button>
                         <button id="btn-scissors">
-                            <img src="images/Scissors.png" alt="scissors" />
+                            <img src="images/scissors.png" alt="scissors" />
                         </button>
                     </div>
                     <div class="score">
                         <h2>You: <span id="player-score">0</span></h2>
                         <p>vs</p>
-                        <h2>Computer: <span id="comp-score">0</span></h2>
+                        <h2>Computer: <span id="computer-score">0</span></h2>
                     </div>
-                    <div class="comp-selection">
-                        <img src="images/Paper.png" alt="Computer's choice" />
+                    <div class="computer-selection">
+                        <!-- Robot image from https://iconduck.com/emojis/46208/robot -->
+                        <img
+                            src="images/robot.svg"
+                            alt="Computer's choice"
+                            id="computer-selection"
+                        />
                     </div>
                 </div>
                 <button class="btn-restart">Restart</button>
