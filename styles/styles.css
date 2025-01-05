@@ -8,8 +8,8 @@ button {
 .body-wrapper {
     position: relative;
     width: 80%;
-    height: 80vh;
-    margin: 4rem auto;
+    height: 85vh;
+    margin: 3rem auto;
     background-color: rgb(181, 213, 245, 0.5);
     border: solid;
     border-radius: 1rem;
@@ -40,11 +40,10 @@ button {
 /* ------------ Gameboard ------------ */
 
 .gameboard {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     margin-top: 1rem;
-    text-align: center;
 }
 
 .player-selection {
