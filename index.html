@@ -4,7 +4,62 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rock Paper Scissors</title>
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Capriola&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="styles/styles.css" />
+
+        <!-- Script -->
         <script src="scripts/script.js" defer></script>
     </head>
-    <body></body>
+    <body>
+        <div class="body-wrapper">
+            <header>
+                <h1>Rock Paper Scissors</h1>
+                <p>Win 5 Rounds to Defeat your Opponent!</p>
+            </header>
+            <main>
+                <div class="gameboard">
+                    <div class="player-selection">
+                        <p>Choose your option</p>
+                        <button id="btn-rock">
+                            <!-- Images from https://creazilla.com/media/clipart/36999/hands-are-showing-rock-paper-scissors-icons -->
+                            <img src="images/rock.png" alt="rock" />
+                        </button>
+                        <button id="btn-paper">
+                            <img src="images/paper.png" alt="paper" />
+                        </button>
+                        <button id="btn-scissors">
+                            <img src="images/scissors.png" alt="scissors" />
+                        </button>
+                    </div>
+                    <div class="score">
+                        <h2>You: <span id="player-score">0</span></h2>
+                        <p>vs</p>
+                        <h2>Computer: <span id="computer-score">0</span></h2>
+                    </div>
+                    <div class="computer-selection">
+                        <!-- Robot image from https://iconduck.com/emojis/46208/robot -->
+                        <img
+                            src="images/robot.svg"
+                            alt="Computer's choice"
+                            id="computer-selection"
+                        />
+                    </div>
+                </div>
+                <button class="btn-restart">Restart</button>
+                <div class="results">
+                    <h2>You won the game! 🥳</h2>
+                    <button class="btn-restart">Restart</button>
+                </div>
+            </main>
+        </div>
+    </body>
 </html>
