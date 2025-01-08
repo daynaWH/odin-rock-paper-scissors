@@ -84,7 +84,7 @@ function playGame(e) {
         gameboard.style.opacity = 0.5;
         resultsPopup.style.display = "block";
         resultsText.textContent = `${
-            humanScore === 3
+            humanScore === 5
                 ? "You won the game! 🥳"
                 : "Sorry, you lost the game 😭"
         }`;
